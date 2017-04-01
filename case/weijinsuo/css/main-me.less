@@ -1,0 +1,208 @@
+header{
+  & .row{
+    & div{
+      height:35px;
+      line-height:35px;
+      font-size:12px;
+      border-bottom:1px solid #ccc;
+      text-align: center;
+    }
+    & div+div{
+      border-left:1px solid #ccc;
+    }
+  }
+}
+nav{
+  & .navbar-default{
+    height:50px;
+    line-height:50px;
+    padding-top: 10px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border:0;
+  }
+    & ul a{
+      height:50px;
+      line-height:50px;
+      &:hover{
+        border-bottom:3px solid red;
+      }
+    }
+   & ul li#active a{
+     border-bottom:3px solid red;
+   }
+}
+
+#zhifu{
+    margin:30px 0;
+  & .container{
+    & .row{
+      border-bottom: 1px solid #ccc;
+      & .col-lg-4{
+        text-align: center;
+        & h4{
+          height:50px;
+        }
+        & p{
+          height:30px;
+        }
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.nav-tabs > li {
+  float: left;
+  padding-bottom:3px;
+}
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.nav-tabs > li > a:hover {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom: 3px solid red;
+  background:#fff;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:3px solid red;
+}
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+.tab-content>div{
+  & .row{
+    margin:20px 0;
+      & div{
+        height:150px;
+        border:1px dashed #fff;
+        background:red;
+      }
+      & .col-lg-7{
+        position: relative;
+        &:before{
+          content: "";
+          width:30px;
+          height:30px;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          right:0;
+          top:0;
+          transform: translate(50%,-50%);
+        }
+      }
+      & .col-lg-5{
+        position: relative;
+        &:before{
+          content: "";
+          width:30px;
+          height:30px;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          left:0;
+          top:0;
+          transform: translate(-50%,-50%);
+        }
+      }
+    }
+  }
+
+
+@font-face {
+  font-family: 'weijinsuo';
+  src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+  url('../font/MiFie-Web-Font.svg') format('svg'),
+  url('../font/MiFie-Web-Font.ttf') format('truetype'),
+  url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^='icon-'],[class*=' icon-'] {
+  font-family: 'weijinsuo';
+  font-style: normal;
+}
+
+.icon-mobilephone::before {
+  content: "\e908";
+  font-size: 13px;
+}
+
+.icon-telephone::before {
+  content: "\e909";
+  font-size: 15px;
+}
+
+.icon-logo::before {
+  content: "\e93e";
+  font-size: 40px;
+  line-height:40px;
+  color:black;
+}
+
+.icon-icon::before {
+  content: "\e920";
+  font-size: 50px;
+  color:red;
+}
+.icon-uniE907:before {
+  content: "\e907";
+  font-size: 40px;
+}
