@@ -2,10 +2,22 @@
 
 1. bootstrap2 和3的区别?
 
-2. 1.bootstrap如何兼容IE9以下浏览器？
+2. bootstrap如何兼容IE9以下浏览器？
 
+* 支持H5（html5shiv.js）
 * 兼容媒体查询 response.js
-* 让浏览器最新的渲染模式
+* IE的兼容模式
+
+```js
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
+* 国产浏览器模式
+
+```js
+  <meta name="renderer" content="webkit">
+```
+
+[查看详细官方文档](http://v3.bootcss.com/getting-started/#support)
 
 3. bootstrap的概念？
 
