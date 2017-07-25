@@ -4,7 +4,7 @@
 
 1. 彻底的重写，从桌面优先 (Desktop First)的设计方式，变成和Zurb的 Foundation 一样的移动优先 (Mobile First) 全新的栅格系统 (Grid System)，更加强大！如果你用过Foundation的栅格系统 (Grid System)就有体会了。
 
-2. 再见，IE7！最低从IE 8开始支持。而且因为设计已经变成移动优先，所以对IE8的支持也需要respond.js我相信Bootstrap 4时肯定会放弃对IE8的支持，就像现在的Foundation 4一样
+2. 再见，IE7！最低从IE 8开始支持（版本2兼容IE6,7,8）。而且因为设计已经变成移动优先，所以对IE8的支持也需要respond.js我相信Bootstrap 4时肯定会放弃对IE8的支持，就像现在的Foundation 4一样
 
 3. 扁平化设计，极简风格。这个你应该从Bootstrap文档的风格也可以看出来了，不过可能是暂时的
 
